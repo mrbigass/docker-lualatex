@@ -15,5 +15,7 @@ RUN ./install-tl --profile=texlive.profile
 
 ENV PATH="/usr/local/texlive/2017/bin/x86_64-linux:${PATH}"
 
+RUN tlmgr install collection-langjapanese
+
 RUN mkdir /src
 WORKDIR /src
